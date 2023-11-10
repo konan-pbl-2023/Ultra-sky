@@ -1,4 +1,4 @@
-package com.example.prototypeapi22;
+package com.ultrasky.game;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.prototypeapi22", appContext.getPackageName());
+        assertEquals("com.ultrasky.game", appContext.getPackageName());
     }
 }

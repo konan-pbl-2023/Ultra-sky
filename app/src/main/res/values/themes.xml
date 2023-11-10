@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.PrototypeAPI22" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.UltraSky" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.PrototypeAPI22" parent="Base.Theme.PrototypeAPI22" />
+    <style name="Theme.UltraSky" parent="Base.Theme.UltraSky" />
 </resources>
