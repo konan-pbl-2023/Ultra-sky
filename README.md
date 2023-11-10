@@ -1,7 +1,7 @@
 
-# e-minigame
+# Ultra-sky
 ## チーム：
-Team-E
+Team-A
 ## アプリ内容：
 ｛内容を書いてください｝
 
