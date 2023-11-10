@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class rule_view extends AppCompatActivity {
+public class RuleView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +14,7 @@ public class rule_view extends AppCompatActivity {
         setContentView(R.layout.activity_rule_view);
         Button backButton = (Button)findViewById(R.id.back);
         backButton.setOnClickListener(v -> {
-            Intent intent = new Intent(rule_view.this, MainActivity.class);
+            Intent intent = new Intent(RuleView.this, MainActivity.class);
             startActivity(intent);
         });
     }
