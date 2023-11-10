@@ -19,5 +19,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, rule_view.class);
         startActivity(intent);
         });
+
+        Button playButton = (Button)findViewById(R.id.play);
+        playButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, game_view.class);
+            startActivity(intent);
+        });
     }
 }
