@@ -1,4 +1,4 @@
-package com.ultrasky.game;
+package com.example.prototypeapi22;
 
 import org.junit.Test;
 

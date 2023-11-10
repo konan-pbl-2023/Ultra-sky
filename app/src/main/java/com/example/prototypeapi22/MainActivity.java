@@ -1,9 +1,8 @@
-package com.ultrasky.game;
+package com.example.prototypeapi22;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.WindowInsetsController;
 
 public class MainActivity extends AppCompatActivity {
 

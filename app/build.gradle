@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.ultrasky.game'
+    namespace 'com.example.prototypeapi22'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.ultrasky.game"
+        applicationId "com.example.prototypeapi22"
         minSdk 33
         targetSdk 33
         versionCode 1
