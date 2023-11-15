@@ -19,7 +19,7 @@
             android:name=".GameView"
             android:exported="false" />
         <activity
-            android:name=".RuleView"
+            android:name=".RuleActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

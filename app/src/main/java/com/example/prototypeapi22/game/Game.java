@@ -1,10 +1,10 @@
-package com.example.prototypeapi22;
+package com.example.prototypeapi22.game;
 
 import android.content.res.Resources;
 import android.graphics.Canvas;
 
-import com.example.prototypeapi22.renderer.GameRenderer;
-import com.example.prototypeapi22.utils.ResourceLoader;
+import com.example.prototypeapi22.game.renderer.GameRenderer;
+import com.example.prototypeapi22.game.utils.ResourceLoader;
 
 public class Game {
 

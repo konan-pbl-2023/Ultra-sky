@@ -1,9 +1,6 @@
-package com.example.prototypeapi22.renderer;
+package com.example.prototypeapi22.game.renderer;
 
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.Typeface;
+import android.graphics.*;
 
 public class GameHud {
 
@@ -14,6 +11,9 @@ public class GameHud {
         int canvasHeight = c.getHeight(); // 画面の高さ
 
         // 画面上のテキストなどをここに書く
+        resetStyle();
+        setTextSize(36);
+        drawText(c, "Hello World", 50, 50, Color.GREEN);
     }
 
     private static void resetStyle() {

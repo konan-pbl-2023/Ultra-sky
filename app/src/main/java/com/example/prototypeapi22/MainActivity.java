@@ -20,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
 
         hideSystemBar();
 
-        Button ruleButton = findViewById(R.id.rule);
-        ruleButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, RuleView.class);
+        Button buttonRule = findViewById(R.id.button_rule);
+        buttonRule.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RuleActivity.class);
             startActivity(intent);
         });
 
-        Button playButton = findViewById(R.id.play);
-        playButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, GameView.class);
+        Button buttonPlay = findViewById(R.id.button_play);
+        buttonPlay.setOnClickListener(v -> {
+            Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
         });
     }
