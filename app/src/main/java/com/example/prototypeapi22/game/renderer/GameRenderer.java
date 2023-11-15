@@ -1,4 +1,4 @@
-package com.example.prototypeapi22.renderer;
+package com.example.prototypeapi22.game.renderer;
 
 import android.graphics.Canvas;
 

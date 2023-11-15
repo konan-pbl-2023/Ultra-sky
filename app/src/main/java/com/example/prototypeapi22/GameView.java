@@ -4,8 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
 import androidx.annotation.NonNull;
+import com.example.prototypeapi22.game.Game;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback, Runnable {
 
@@ -45,6 +45,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Run
 
         while (thread != null) {
             canvas = holder.lockHardwareCanvas();
+
             Game.getInstance().update();
             Game.getInstance().draw(canvas);
 

@@ -1,4 +1,4 @@
-package com.example.prototypeapi22.utils;
+package com.example.prototypeapi22.game.utils;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
