@@ -48,7 +48,7 @@
         android:id="@+id/textView2"
         android:layout_width="116dp"
         android:layout_height="81dp"
-        android:text="０"
+        android:text="1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
