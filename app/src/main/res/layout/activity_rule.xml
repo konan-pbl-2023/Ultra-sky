@@ -110,24 +110,18 @@
             android:id="@+id/imageView"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView6"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/text_list_object_heading_text"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/apple"/>
 
     <ImageView
             android:id="@+id/imageView2"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView7"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            android:layout_marginVertical="10dp"
             app:srcCompat="@drawable/star"/>
 
     <TextView
@@ -135,35 +129,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/speed_up"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4"/>
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_list_object_heading_text"
+            android:layout_marginVertical="20dp" />
 
     <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/invincible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.12"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8"/>
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_marginVertical="35dp"/>
 
     <ImageView
             android:id="@+id/imageView3"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView8"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.48"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/sun"/>
 
     <TextView
@@ -171,47 +156,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/speed_down"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.48"/>
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:layout_marginVertical="35dp"/>
 
     <ImageView
             android:id="@+id/imageView4"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView9"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.56"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/bird"/>
 
     <ImageView
             android:id="@+id/imageView5"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView10"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.643"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/squid"/>
 
     <ImageView
             android:id="@+id/imageView6"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView11"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.718"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/octopus"/>
 
     <TextView
@@ -219,36 +192,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/game_over"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.56"/>
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:layout_marginVertical="35dp"/>
 
     <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/blind"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.46"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.64"/>
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            android:layout_marginVertical="35dp"/>
 
     <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/inoperable"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.35"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.72"/>
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:layout_marginVertical="35dp"/>
 
 
     <!-- 戻るボタン -->
