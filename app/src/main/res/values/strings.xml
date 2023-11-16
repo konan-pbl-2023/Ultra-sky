@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">PrototypeAPI22</string>
+    <string name="goal_time">ゴールタイム</string>
+    <string name="title">タイトルへ</string>
+    <string name="replay">リプレイ</string>
+    <string name="time">1</string>
+    <string name="rule">遊び方</string>
+    <string name="maru">○</string>
+    <string name="basic_rule">基本ルール</string>
+    <string name="concrete_rule">飛行機を左右に動かし障害物を避けながら、ゴールを目指し、タイムが速い方が勝ち。</string>
+    <string name="maru2">○</string>
+    <string name="item">アイテム・障害物一覧</string>
+    <string name="speed_up">スピードアップ</string>
+    <string name="invincible">無敵</string>
+    <string name="speed_down">スピードダウン</string>
+    <string name="game_over">ゲームオーバー</string>
+    <string name="blind">画面が見えづらくなる</string>
+    <string name="inoperable">操作不能</string>
+    <string name="back">戻る</string>
+    <string name="play">プレイ</string>
+    <string name="rule2">遊び方</string>
+    <string name="image_title">タイトルの画像</string>
+    <string name="image_plane">飛行機の画像</string>
 </resources>
