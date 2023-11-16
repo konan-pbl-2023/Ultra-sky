@@ -8,18 +8,17 @@
         tools:context=".MainActivity">
 
     <ImageView
-            android:id="@+id/image_title"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintWidth_percent="0.9"
-            app:layout_constraintHeight_percent="0.5"
-            android:src="@drawable/title"
-            android:contentDescription="@string/image_title"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+        android:id="@+id/image_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription=""
+        android:src="@drawable/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ImageView
             android:id="@+id/image_plane"
