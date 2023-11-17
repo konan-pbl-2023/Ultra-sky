@@ -12,7 +12,7 @@
             android:id="@+id/text_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="遊び方"
+            android:text="@string/rule"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
 
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
             android:id="@+id/text_rule_basic_heading_marker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="○"
+            android:text="@string/maru"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
 
@@ -51,7 +51,7 @@
             android:id="@+id/text_rule_basic_heading_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="基本ルール"
+            android:text="@string/basic_rule"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
 
@@ -60,7 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintWidth_percent="0.85"
-            android:text="飛行機を左右に動かし障害物を避けながら、ゴールを目指し、タイムが速い方が勝ち。"
+            android:text="@string/concrete_rule"
 
             app:layout_constraintStart_toStartOf="@id/text_rule_basic_heading_text"
             app:layout_constraintTop_toBottomOf="@id/flow_rule_basic_heading"
@@ -88,7 +88,7 @@
             android:id="@+id/text_list_object_heading_marker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="○"
+            android:text="@string/maru2"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
 
@@ -96,160 +96,132 @@
             android:id="@+id/text_list_object_heading_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="アイテム・障害物一覧"
+            android:text="@string/item"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
 
+
+
+
+
+
+
     <ImageView
             android:id="@+id/imageView"
-            android:layout_width="51dp"
-            android:layout_height="42dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.183"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.394"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/text_list_object_heading_text"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/apple"/>
 
     <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="53dp"
-            android:layout_height="46dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.148"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.808"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            android:layout_marginVertical="10dp"
             app:srcCompat="@drawable/star"/>
 
     <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="スピードアップ"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.426"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.398"/>
+            android:text="@string/speed_up"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_list_object_heading_text"
+            android:layout_marginVertical="20dp" />
 
     <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="無敵"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8"/>
+            android:text="@string/invincible"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_marginVertical="35dp"/>
 
     <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="57dp"
-            android:layout_height="71dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.158"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.475"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/sun"/>
 
     <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="スピードダウン"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.435"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.47"/>
+            android:text="@string/speed_down"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:layout_marginVertical="35dp"/>
 
     <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="70dp"
-            android:layout_height="62dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.155"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.56"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/bird"/>
 
     <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="72dp"
-            android:layout_height="52dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.156"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.643"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/squid"/>
 
     <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="60dp"
-            android:layout_height="59dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.718"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/text_list_object_heading_text"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            android:layout_marginVertical="5dp"
             app:srcCompat="@drawable/octopus"/>
 
     <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ゲームオーバー"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.482"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.549"/>
+            android:text="@string/game_over"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:layout_marginVertical="35dp"/>
 
     <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="画面が見えづらくなる"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.522"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.622"/>
+            android:text="@string/blind"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            android:layout_marginVertical="35dp"/>
 
     <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="操作不能"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.425"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.7"/>
+            android:text="@string/inoperable"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:layout_marginVertical="35dp"/>
+
 
     <!-- 戻るボタン -->
     <Button
             android:id="@+id/button_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="戻る"
+
+            android:text="@string/back"
             android:textSize="28sp"
 
             app:layout_constraintStart_toStartOf="parent"

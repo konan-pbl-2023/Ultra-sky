@@ -8,25 +8,24 @@
         tools:context=".MainActivity">
 
     <ImageView
-            android:id="@+id/image_title"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintWidth_percent="0.9"
-            app:layout_constraintHeight_percent="0.5"
-            android:src="@drawable/title"
-            android:contentDescription=""
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+        android:id="@+id/image_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription=""
+        android:src="@drawable/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ImageView
             android:id="@+id/image_plane"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/plane2"
-            android:contentDescription=""
+            android:contentDescription="@string/image_plane"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +38,7 @@
             android:id="@+id/button_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="プレイ"
+            android:text="@string/play"
             android:textSize="28sp"
 
             app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +51,7 @@
             android:id="@+id/button_rule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="遊び方"
+            android:text="@string/rule2"
             android:textSize="28sp"
 
             app:layout_constraintStart_toStartOf="parent"
