@@ -1,17 +1,20 @@
-package com.example.prototypeapi22.game;
+package com.example.prototypeapi22.game.stage;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import com.example.prototypeapi22.R;
+import com.example.prototypeapi22.game.Game;
+import com.example.prototypeapi22.game.GameHud;
+import com.example.prototypeapi22.game.GameSession;
 
-public class GameRenderer {
+public class StageRenderer {
 
-    private static GameRenderer instance = null;
+    private static StageRenderer instance = null;
 
     private Bitmap bgImage;
 
-    private GameRenderer() {
+    private StageRenderer() {
     }
 
     public void render(Canvas c) {
@@ -31,13 +34,11 @@ public class GameRenderer {
 
         // Render entities
         session.getStage().draw(c);
-
-        GameHud.renderHud(c);
     }
 
-    public static GameRenderer getInstance() {
+    public static StageRenderer getInstance() {
         if (instance == null) {
-            instance = new GameRenderer();
+            instance = new StageRenderer();
         }
         return instance;
     }
