@@ -18,6 +18,7 @@ import com.example.prototypeapi22.game.entity.item.EntityStar;
 import com.example.prototypeapi22.game.entity.obstacle.EntityBird;
 import com.example.prototypeapi22.game.entity.obstacle.EntityOctopus;
 import com.example.prototypeapi22.game.entity.obstacle.EntitySquid;
+import com.example.prototypeapi22.game.entity.obstacle.EntitySun;
 
 import java.util.ArrayList;
 
@@ -27,7 +28,8 @@ public class Stage {
     private final ArrayList<Entity> entities = new ArrayList<>();
     private final ArrayList<Entity> removeQueue = new ArrayList<>(); // entities that will remove in next frame
 
-    private static final int GOAL_POSY = -10000;
+    // TODO: Fix this owatteru method
+    private static final int GOAL_POSY = -50000;
     private int offsetY = 0;
 
     public Stage() {
@@ -35,11 +37,29 @@ public class Stage {
         removeQueue.clear();
 
         player = new EntityPlayer(360, 1920 - 180, 360, 360);
-        entities.add(new EntityApple(500, 1000, 200, 200));
-        entities.add(new EntityStar(900, 0, 200, 200));
-        entities.add(new EntityBird(600, -3000, 200, 200));
-        entities.add(new EntitySquid(500, -4000, 200, 200));
-        entities.add(new EntityOctopus(500, -5000, 200, 200));
+
+        entities.add(new EntityApple(500, -6000, 200, 200));
+        entities.add(new EntityStar(900, -10000, 200, 200));
+        entities.add(new EntityBird(600, -15000, 200, 200));
+        entities.add(new EntityApple(500, -16000, 200, 200));
+        entities.add(new EntitySun(900, -17000, 200, 200));
+        entities.add(new EntityBird(600, -18000, 200, 200));
+        entities.add(new EntitySquid(500, -19000, 200, 200));
+        entities.add(new EntitySun(1000, -25000, 200, 200));
+        entities.add(new EntityApple(200, -26000, 200, 200));
+        entities.add(new EntityStar(900, -30000, 200, 200));
+        entities.add(new EntityBird(600, -31000, 200, 200));
+        entities.add(new EntitySquid(300, -22000, 200, 200));
+        entities.add(new EntitySun(500, -45000, 200, 200));
+        entities.add(new EntityApple(500, -48000, 200, 200));
+        entities.add(new EntitySquid(500, -20000, 200, 200));
+        entities.add(new EntityOctopus(500, -25000, 200, 200));
+        entities.add(new EntityApple(500, -26000, 200, 200));
+        entities.add(new EntitySun(900, -30000, 200, 200));
+        entities.add(new EntityBird(600, -35000, 200, 200));
+        entities.add(new EntitySquid(500, -40000, 200, 200));
+        entities.add(new EntityOctopus(500, -45000, 200, 200));
+        entities.add(new EntityApple(500, -48000, 200, 200));
     }
 
     public void update() {
