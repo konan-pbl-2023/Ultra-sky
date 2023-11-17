@@ -1,5 +1,5 @@
 package com.example.prototypeapi22.game;
 
 public enum GameState {
-    STANDBY, PLAYING, FINISHED, GAMEOVER
+    STANDBY, PLAYING, FINISHED, GAME_OVER
 }

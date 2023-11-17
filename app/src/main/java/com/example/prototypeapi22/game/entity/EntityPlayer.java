@@ -19,6 +19,8 @@ public class EntityPlayer extends Entity {
 
     private boolean gameOver = false;
 
+    private boolean immortal = false;
+
     public EntityPlayer(int posX, int posY, int width, int height) {
         super(Game.getInstance().getResourceLoader().getResource(R.drawable.plane), posX, posY, width, height);
 
@@ -45,6 +47,9 @@ public class EntityPlayer extends Entity {
         if (alreadyAffected) {
             return;
         }
+        if (immortal && newEffect instanceof EffectSpeedUp) {
+            return;
+        }
         effects.add(newEffect);
     }
 
@@ -57,11 +62,11 @@ public class EntityPlayer extends Entity {
                 continue;
             }
             if (e instanceof EffectSpeedUp) {
-                speedMultiplier *= 2;
+                speedMultiplier *= 5;
                 continue;
             }
             if (e instanceof EffectSpeedDown) {
-                speedMultiplier /= 2;
+                speedMultiplier /= 3;
             }
         }
         return baseSpeed * speedMultiplier;
@@ -101,6 +106,14 @@ public class EntityPlayer extends Entity {
 
     public void setGameOver(boolean gameOver) {
         this.gameOver = gameOver;
+    }
+
+    public boolean isImmortal() {
+        return immortal;
+    }
+
+    public void setImmortal(boolean immortal) {
+        this.immortal = immortal;
     }
 
     public boolean isCollideTop() {

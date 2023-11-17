@@ -1,7 +1,5 @@
 package com.example.prototypeapi22.game;
 
-import com.example.prototypeapi22.game.entity.Entity;
-import com.example.prototypeapi22.game.entity.EntityPlayer;
 import com.example.prototypeapi22.game.stage.Stage;
 
 public class GameSession {
@@ -39,12 +37,16 @@ public class GameSession {
                 // Go to result screen
                 break;
             }
-            case GAMEOVER: {
+            case GAME_OVER: {
                 // Go to result screen with replacing heading text
                 break;
             }
         }
         countFrames();
+    }
+
+    public void onSwipe(float distX) {
+        stage.onSwipe(distX);
     }
 
     private void updateTime() {
@@ -56,6 +58,10 @@ public class GameSession {
     }
 
     public GameState getState() {
+        return state;
+    }
+
+    public GameState getGameState() {
         return state;
     }
 

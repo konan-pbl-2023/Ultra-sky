@@ -42,6 +42,10 @@ public class Game {
     public void destroy() {
     }
 
+    public void onSwipe(float distX) {
+        gameSession.onSwipe(distX);
+    }
+
     public static Game getInstance() {
         if (instance == null) {
             instance = new Game();
