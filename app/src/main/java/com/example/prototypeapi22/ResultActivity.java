@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class ResultActivity extends AppCompatActivity {
-
+    private MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +25,12 @@ public class ResultActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.game_finish);
+        mediaPlayer = MediaPlayer.create(this, R.raw.game_finish);
         mediaPlayer.start();
     }
 
+    protected void onPause(){
+        super.onPause();
+        mediaPlayer.stop();
+    }
 }
