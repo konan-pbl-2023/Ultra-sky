@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        hideSystemBar();
+        SystemBarController.hide(getWindow());
 
         Button buttonRule = findViewById(R.id.button_rule);
         buttonRule.setOnClickListener(v -> {
@@ -38,19 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onWindowFocusChanged(hasFocus);
 
         if (hasFocus) {
-            hideSystemBar();
+            SystemBarController.hide(getWindow());
         }
-    }
-
-    private void hideSystemBar() {
-        Window window = getWindow();
-        View decorView = window.getDecorView();
-        WindowInsetsControllerCompat controller = WindowCompat.getInsetsController(window, decorView);
-
-        controller.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
-        decorView.setOnApplyWindowInsetsListener(((view, windowInsets) -> {
-            controller.hide(WindowInsetsCompat.Type.systemBars());
-            return view.onApplyWindowInsets(windowInsets);
-        }));
     }
 }
