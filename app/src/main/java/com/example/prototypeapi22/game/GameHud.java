@@ -15,8 +15,8 @@ public class GameHud {
         /* 時間を表示 */
         String time = TimeUtil.getClockText(Game.getInstance().getGameSession().getElapsedTime());
         resetStyle();
-        setTextSize(54);
-        drawText(c, time, canvasWidth - getTextWidth(time) - 50, 50, Color.WHITE);
+        setTextSize(80);
+        drawText(c, time, canvasWidth - getTextWidth(time) - 50, 100, Color.WHITE);
 
         Paint p = new Paint();
         p.setColor(Color.argb(0.5F, 0.0F, 0.0F, 0.0F));
