@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private Intent backgroundService;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.game_start);
+        mediaPlayer = MediaPlayer.create(this, R.raw.game_start);
         mediaPlayer.start();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mediaPlayer.stop();
     }
 
     @Override
