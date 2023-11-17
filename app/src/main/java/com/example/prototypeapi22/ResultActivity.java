@@ -13,13 +13,13 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        Button buttonReplay = findViewById(R.id.button_replay);
+        Button buttonReplay = findViewById(R.id.replay);
         buttonReplay.setOnClickListener(v -> {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
         });
 
-        Button buttonTitle = findViewById(R.id.button_title);
+        Button buttonTitle = findViewById(R.id.title);
         buttonTitle.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
