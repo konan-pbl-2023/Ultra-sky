@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class EntityPlayer extends Entity {
 
-    private ArrayList<Effect> effects = new ArrayList<>();
+    private final ArrayList<Effect> effects = new ArrayList<>();
 
     private boolean collideTop = false;
     private boolean collideBottom = false;
