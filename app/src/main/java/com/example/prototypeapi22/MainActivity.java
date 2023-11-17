@@ -3,21 +3,20 @@ package com.example.prototypeapi22;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Intent backgroundService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        backgroundService = new Intent(this, BackgroundService.class);
+        startService(backgroundService);
 
         SystemBarController.hide(getWindow());
 
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         buttonPlay.setOnClickListener(v -> {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
+
         });
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.game_start);

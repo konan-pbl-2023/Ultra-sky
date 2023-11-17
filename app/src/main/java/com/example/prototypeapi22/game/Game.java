@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import com.example.prototypeapi22.game.stage.StageRenderer;
 import com.example.prototypeapi22.game.utils.ResourceLoader;
 
 public class Game {
@@ -34,7 +35,8 @@ public class Game {
         // clear all previous bitmaps
         c.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
-        GameRenderer.getInstance().render(c);
+        StageRenderer.getInstance().render(c);
+        GameHud.renderHud(c);
     }
 
     public void destroy() {

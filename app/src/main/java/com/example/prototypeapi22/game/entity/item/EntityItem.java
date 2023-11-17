@@ -3,7 +3,7 @@ package com.example.prototypeapi22.game.entity.item;
 import com.example.prototypeapi22.game.entity.Entity;
 import com.example.prototypeapi22.game.item.Item;
 
-public class EntityItem extends Entity {
+public abstract class EntityItem extends Entity {
 
     private final Item item;
 

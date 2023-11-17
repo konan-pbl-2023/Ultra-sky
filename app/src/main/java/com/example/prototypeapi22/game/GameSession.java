@@ -11,7 +11,7 @@ public class GameSession {
     private long frames;
     private long elapsedTime; // milliseconds
 
-    private Stage stage;
+    private final Stage stage;
 
     public GameSession() {
         state = GameState.STANDBY;
@@ -36,6 +36,11 @@ public class GameSession {
                 break;
             }
             case FINISHED: {
+                // Go to result screen
+                break;
+            }
+            case GAMEOVER: {
+                // Go to result screen with replacing heading text
                 break;
             }
         }
@@ -52,6 +57,10 @@ public class GameSession {
 
     public GameState getState() {
         return state;
+    }
+
+    public void setGameState(GameState state) {
+        this.state = state;
     }
 
     public long getElapsedTime() {

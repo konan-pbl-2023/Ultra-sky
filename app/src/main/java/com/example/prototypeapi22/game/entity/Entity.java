@@ -3,8 +3,9 @@ package com.example.prototypeapi22.game.entity;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.util.Log;
 
-public class Entity {
+public abstract class Entity {
 
     private final Bitmap texture;
 
@@ -35,6 +36,21 @@ public class Entity {
 
         c.drawBitmap(texture, src, dest, null);
     }
+
+    public boolean isCollideTo(Entity entity) {
+        int selfLeft = this.posX - (this.width / 2);
+        int selfTop = this.posY - (this.height / 2);
+        int selfRight = this.posX + (this.width / 2);
+        int selfBottom = this.posY + (this.height / 2);
+        int entityLeft = entity.getPosX() - (entity.getWidth() / 2);
+        int entityTop = entity.getPosY() - (entity.getHeight() / 2);
+        int entityRight = entity.getPosX() + (entity.getWidth() / 2);
+        int entityBottom = entity.getPosY() + (entity.getHeight() / 2);
+        boolean isOutside = selfLeft > entityRight || selfRight < entityLeft || selfTop > entityBottom || selfBottom < entityTop;
+        return !isOutside;
+    }
+
+    public abstract void onCollideTo(Entity entity);
 
     public int getPosX() {
         return posX;
