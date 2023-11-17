@@ -1,6 +1,7 @@
 package com.example.prototypeapi22;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
+
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.game_start);
+        mediaPlayer.start();
     }
 
     @Override

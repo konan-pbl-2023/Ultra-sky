@@ -7,53 +7,47 @@
     tools:context=".ResultActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/goal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/goal_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        android:layout_marginTop="60dp"/>
 
     <Button
-        android:id="@+id/button_title"
+        android:id="@+id/title"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:text="@string/title"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintEnd_toStartOf="@+id/replay"
+        app:layout_constraintStart_toStartOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:layout_marginVertical="100dp"/>
 
     <Button
-        android:id="@+id/button_replay"
+        android:id="@+id/replay"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:text="@string/replay"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintEnd_toEndOf="@+id/time"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:layout_marginVertical="100dp"/>
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="116dp"
-        android:layout_height="81dp"
-        android:text="@string/time"
+        android:id="@+id/time"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="100dp"
+        android:text="00:00"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintEnd_toEndOf="@+id/goal"
+        app:layout_constraintStart_toStartOf="@+id/goal"
+        app:layout_constraintTop_toBottomOf="@+id/goal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
