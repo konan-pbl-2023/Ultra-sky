@@ -111,6 +111,9 @@ public class Stage {
     }
 
     public void onSwipe(float distX) {
+        if (Game.getInstance().getGameSession().getGameState() != GameState.PLAYING) {
+            return;
+        }
         if (distX > 0) {
             player.moveLeft();
         } else if (distX < 0) {
