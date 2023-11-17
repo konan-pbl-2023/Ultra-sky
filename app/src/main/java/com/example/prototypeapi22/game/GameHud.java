@@ -1,6 +1,8 @@
-package com.example.prototypeapi22.game.renderer;
+package com.example.prototypeapi22.game;
 
 import android.graphics.*;
+import com.example.prototypeapi22.game.Game;
+import com.example.prototypeapi22.game.utils.TimeUtil;
 
 public class GameHud {
 
@@ -10,10 +12,11 @@ public class GameHud {
         int canvasWidth = c.getWidth(); // 画面の横幅
         int canvasHeight = c.getHeight(); // 画面の高さ
 
-        // 画面上のテキストなどをここに書く
+        /* 時間を表示 */
+        String time = TimeUtil.getClockText(Game.getInstance().getGameSession().getElapsedTime());
         resetStyle();
-        setTextSize(36);
-        drawText(c, "Hello World", 50, 50, Color.GREEN);
+        setTextSize(54);
+        drawText(c, time, canvasWidth - getTextWidth(time) - 50, 50, Color.WHITE);
     }
 
     private static void resetStyle() {

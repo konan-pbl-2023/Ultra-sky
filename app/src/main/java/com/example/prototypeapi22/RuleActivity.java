@@ -13,10 +13,21 @@ public class RuleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rule);
 
+        SystemBarController.hide(getWindow());
+
         Button buttonBack = findViewById(R.id.button_back);
         buttonBack.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+
+        if (hasFocus) {
+            SystemBarController.hide(getWindow());
+        }
     }
 }

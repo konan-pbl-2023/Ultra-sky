@@ -46,6 +46,12 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Run
         while (thread != null) {
             canvas = holder.lockHardwareCanvas();
 
+            if (Game.fieldWidth == -1) {
+                Game.fieldWidth = canvas.getWidth();
+            }
+            if (Game.fieldHeight == -1) {
+                Game.fieldHeight = canvas.getHeight();
+            }
             Game.getInstance().update();
             Game.getInstance().draw(canvas);
 

@@ -6,13 +6,13 @@ import android.graphics.Rect;
 
 public class Entity {
 
-    private Bitmap texture;
+    private final Bitmap texture;
 
     private int posX;
     private int posY;
 
-    private int width;
-    private int height;
+    private final int width;
+    private final int height;
 
     public Entity(Bitmap texture, int posX, int posY, int width, int height) {
         this.texture = texture;
@@ -40,8 +40,16 @@ public class Entity {
         return posX;
     }
 
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
     public int getPosY() {
         return posY;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
     }
 
     public int getWidth() {
