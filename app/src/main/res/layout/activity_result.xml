@@ -7,13 +7,34 @@
     android:forceDarkAllowed="false"
     tools:context=".ResultActivity">
 
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="568dp"
+        android:layout_height="779dp"
+        app:srcCompat="@drawable/cloud_bg"
+        tools:layout_editor_absoluteX="-79dp"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="159dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rainbow" />
+
     <TextView
         android:id="@+id/goal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="116dp"
         android:text="@string/goal_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#FB06F8"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,34 +45,103 @@
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:layout_marginVertical="100dp"
+        android:layout_marginTop="100dp"
         android:backgroundTint="#87CEFA"
         android:text="@string/title"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/replay"
         app:layout_constraintStart_toStartOf="@+id/time"
-        app:layout_constraintTop_toBottomOf="@+id/time" />
-
-    <Button
-        android:id="@+id/replay"
-        android:layout_width="156dp"
-        android:layout_height="82dp"
-        android:layout_marginVertical="100dp"
-        android:backgroundTint="#87CEFA"
-        android:text="@string/replay"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="@+id/time"
-        app:layout_constraintStart_toEndOf="@+id/title"
-        app:layout_constraintTop_toBottomOf="@+id/time" />
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/time"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginVertical="100dp"
+        android:layout_marginTop="96dp"
         android:text="00:00"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         app:layout_constraintEnd_toEndOf="@+id/goal"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="@+id/goal"
         app:layout_constraintTop_toBottomOf="@+id/goal" />
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="156dp"
+        android:layout_height="82dp"
+        android:layout_marginVertical="100dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#87CEFA"
+        android:text="@string/replay"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/time"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="159dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/balloon_red2" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579"
+        app:srcCompat="@drawable/balloon_red2" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="154dp"
+        android:layout_height="167dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/balloon_yellow2" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="171dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/balloon_yellow2" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="149dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/heart" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
