@@ -23,15 +23,15 @@ public abstract class Entity {
         this.height = height;
     }
 
-    public void draw(Canvas c) {
+    public void draw(Canvas c, int offsetY) {
         int texWidth = texture.getWidth();
         int texHeight = texture.getHeight();
         Rect src = new Rect(0, 0, texWidth, texHeight);
 
-        int top = posY - (height / 2);
+        int top = posY - (height / 2) + offsetY;
         int left = posX - (width / 2);
         int right = posX + (width / 2);
-        int bottom = posY + (height / 2);
+        int bottom = posY + (height / 2) + offsetY;
         Rect dest = new Rect(left, top, right, bottom);
 
         c.drawBitmap(texture, src, dest, null);

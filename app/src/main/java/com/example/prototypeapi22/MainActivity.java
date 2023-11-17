@@ -16,9 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        backgroundService = new Intent(this, BackgroundService.class);
-        startService(backgroundService);
-
         SystemBarController.hide(getWindow());
 
         Button buttonRule = findViewById(R.id.button_rule);

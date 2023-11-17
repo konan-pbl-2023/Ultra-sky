@@ -1,11 +1,13 @@
 package com.example.prototypeapi22;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import androidx.annotation.NonNull;
 import com.example.prototypeapi22.game.Game;
+import com.example.prototypeapi22.game.GameState;
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback, Runnable {
 
